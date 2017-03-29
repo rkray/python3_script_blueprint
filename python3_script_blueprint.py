@@ -2,10 +2,20 @@
 #
 # author: rene@kray.info
 # date: 2017-02-28
+# purpose:
+# - basic python3 script
+#
+# Todo
+# - signal handling
+# - cleanup function
+# - logging
 
 from optparse import OptionParser
 #from re import match
 
+################################################################################
+# Class related things
+################################################################################
 class BluePrint:
     def __init__(self):
         print("init the class")
@@ -19,6 +29,9 @@ class BluePrint:
         print("running")
         print(self.conf)
 
+    ############################################################################
+    # geting commandline arguments
+    ############################################################################
     def get_arguments(self):
         print("parse command line arguments")
         parser = OptionParser()
